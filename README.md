@@ -1,5 +1,3 @@
-# easyass
+# go-dasm16
 
-## Easy? Sign me up! 
-
-easyass makes writing dcpu-16 programs for 0x10c simple.
+Write dasm16 files easily in go!
