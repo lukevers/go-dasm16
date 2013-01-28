@@ -21,8 +21,20 @@ func main() {
 }
 
 func checkYoFlags() (path string) {
-	//args := os.Args()
-	
-	
+	switch len(os.Args) {
+		default:
+			println("\033[31mError\033[0m: Too many arguments! Stopping.")
+			os.Exit(0)
+		case 1:
+			println("\033[31mError\033[0m: No file included! Stopping.")
+			os.Exit(0)
+		case 2:
+			path = os.Args[1]
+			if _, err := os.Stat(path); os.IsNotExist(err) {
+				println("\033[31mError\033[0m: File does not exist! Stopping.")
+				os.Exit(0)
+			}
+	}
+
 	return
 }
