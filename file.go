@@ -12,7 +12,7 @@ func readFile(path string) (content string, title string, dir string) {
 		os.Exit(1)
 	} else {
 		content = string(f)
-		title = path[strings.LastIndex(path, "/")+1:]
+		title = path[strings.LastIndex(path, "/")+1:strings.LastIndex(path, ".")]
 		dir = path[0:strings.LastIndex(path, title)] 
 	}
 	return
