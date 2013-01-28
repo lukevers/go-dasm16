@@ -1,2 +1,5 @@
 # Annoying Mac OS X files
 .DS_STORE
+
+# Binaries
+go-dasm16

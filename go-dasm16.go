@@ -21,7 +21,7 @@ func main() {
 }
 
 func checkYoFlags() (path string) {
-	
+	//args := os.Args()
 	
 	
 	return
